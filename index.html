@@ -39,6 +39,27 @@
         .section-heading {
             font-family: 'Handlee', cursive;
         }
+
+        .wellness-tips ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+        }
+
+        .wellness-tips li {
+            padding: 0.5rem 0;
+        }
+
+        .testimonial-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .carousel-item {
+            padding: 2rem 0;
+        }
     </style>
 </head>
 
@@ -84,7 +105,7 @@
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100">
-                    <img src="assets/images/service1.jpg" class="card-img-top" alt="Service 1">
+                    <img src="assets/images/mental_health.png" class="card-img-top" alt="Service 1">
                     <div class="card-body">
                         <h5 class="card-title">Service 1</h5>
                         <p class="card-text">Description of Service 1.</p>
@@ -93,7 +114,7 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100">
-                    <img src="assets/images/service2.jpg" class="card-img-top" alt="Service 2">
+                    <img src="assets/images/nutrition.png" class="card-img-top" alt="Service 2">
                     <div class="card-body">
                         <h5 class="card-title">Service 2</h5>
                         <p class="card-text">Description of Service 2.</p>
@@ -102,7 +123,7 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100">
-                    <img src="assets/images/service3.jpg" class="card-img-top" alt="Service 3">
+                    <img src="assets/images/wellness.png" class="card-img-top" alt="Service 3">
                     <div class="card-body">
                         <h5 class="card-title">Service 3</h5>
                         <p class="card-text">Description of Service 3.</p>
@@ -111,12 +132,68 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100">
-                    <img src="assets/images/service4.jpg" class="card-img-top" alt="Service 4">
+                    <img src="assets/images/yoga.png" class="card-img-top" alt="Service 4">
                     <div class="card-body">
                         <h5 class="card-title">Service 4</h5>
                         <p class="card-text">Description of Service 4.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wellness-tips" class="container py-5 wellness-tips">
+        <h2 class="mb-5 section-heading fw-bold">Wellness Tips</h2>
+        <p class="lead mb-4">At Seven Seas Spa, we believe in holistic wellness. Here are some tips to help you maintain your wellbeing between visits:</p>
+        <ul>
+            <li>Practice mindful meditation for at least 10 minutes daily</li>
+            <li>Stay hydrated by drinking at least 8 glasses of water per day</li>
+            <li>Get 7-9 hours of quality sleep each night</li>
+            <li>Take regular breaks to stretch and move throughout your workday</li>
+            <li>Practice deep breathing exercises when feeling stressed</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="container-fluid bg-light py-5">
+        <div class="container">
+            <h2 class="mb-5 section-heading fw-bold">Testimonials</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="assets/images/testimonial1.jpg" class="testimonial-img" alt="Client 1">
+                        <blockquote class="blockquote">
+                            <p>"Seven Seas Spa transformed my wellness journey. Their holistic approach to health is remarkable."</p>
+                            <footer class="blockquote-footer">Sarah Johnson</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="assets/images/testimonial2.jpg" class="testimonial-img" alt="Client 2">
+                        <blockquote class="blockquote">
+                            <p>"The most relaxing and rejuvenating experience I've ever had. The staff is exceptional!"</p>
+                            <footer class="blockquote-footer">Michael Chen</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="assets/images/testimonial3.jpg" class="testimonial-img" alt="Client 3">
+                        <blockquote class="blockquote">
+                            <p>"A sanctuary of peace and wellness. I leave feeling renewed after every visit."</p>
+                            <footer class="blockquote-footer">Emma Thompson</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
