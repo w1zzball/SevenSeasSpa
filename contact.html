@@ -28,7 +28,7 @@
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
@@ -49,8 +49,32 @@
     </div>
     </div>
 
-
-    <!-- Main content section will go here -->
+    <section id="contact-form" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="lead">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+                <form action="thankyou.html" method="GET">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer mt-5">
         <div class="container">
